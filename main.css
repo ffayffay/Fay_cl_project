@@ -1,5 +1,5 @@
 
-body {
+/*body {
 	margin: 0;
 	font-size: 1rem;
 }
@@ -8,64 +8,15 @@ body {
 	display: flex;
 	max-height: 100%;
 	flex-direction: column;
-}
+}*/
 
-.wrap-header {
-	display: flex;
-	align-items: center;
-	min-height: 10vh;
-	background: #a673c9;	
-	position: sticky;
-	top: 0;
-	z-index: 1;
+/*NAVIGATION TABS*/
+/*.tabs {
+	padding-top: 20px;
 }
 
 .content-banner{
 	padding-top: 25px;
-}
-
-header {
-	display: flex;
-	justify-content: space-between;
-	flex: 1;
-}
-
-h1 {
-	display: flex;
-	margin-left: 15px;
-}
-
-nav {
-	display: flex;
-	margin-right: 15px;
-}
-
-.nav-ul {
-	display: flex;
-}
-
-.nav-button {
-	display: flex;
-	background: lightyellow;
-	flex-direction: row;
-	width: 65px;
-	margin: 10px;
-    justify-content: center;
-    padding: 10px;
-}
-
-.nav-button a {
-	text-decoration: none;
-}
-
-.back-to-top-button {
-    text-decoration: none;
-    display: flex;
-    max-height: 80px;
-    position: fixed;
-    bottom: 30px;
-    right: 8px;
-	z-index: 1;
 }
 
 .button-order {
@@ -74,22 +25,26 @@ nav {
     bottom: 30px;
     left: 30px;
 	z-index: 1;
-	background-color: #dfdfdf;
-    border: solid 2px darkgrey;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
     display: inline-block;
-    font-size: 16px;
 }
 
 .wrap-content {
 	display: flex;
 	justify-content: center;
 	flex-direction: row;
-	min-height: 100vh;
+	padding-top: 25px;
+}
+
+.cookie-div {
 	flex-wrap: wrap;
+}
+
+#cookie-flavor {
+	margin-bottom: 25px;
+}
+
+.wrap-cookie-price {
+	margin-top: 25px;
 }
 
 .wrap-banner {
@@ -159,34 +114,67 @@ footer {
 .modal {
 	display: flex;
 	justify-content: center;
-	height: 75vh;
+	height: 100vh;
+	width: 100vw;
 	align-items: center;
+	display: flex;
+    position: fixed;
+    top: 0;
+	z-index: 1;
+	background-color: #b3a6ee;
 }
 
 form {
 	display: flex;
 	flex-direction: column;
-}
+}*/
 
-input {
+/*input {
 	padding: 15px;
 	font-size: 16px;
-}
+}*/
 
-.button-send-order {
-	background-color: #dfdfdf;
-    border: solid 2px darkgrey;
-    color: black;
-    padding: 15px 32px;
+/*.button-send-order {
     position: relative;
     top: 170px;
     left: 50px;
+}*/
+
+
+/*NAVIGATION TABS*/
+.tabs {
+	padding-top: 20px;
+}
+
+/*HIDDEN CLASS FOR JS*/
+.hidden {
+	visibility: hidden;
+	height: 0;
+}
+
+.wrap-img {
+	display: flex;
+	max-height: 350px;
+	max-width: 375px;
+	margin: auto;
+	margin-top: 5%;
+}
+
+img {
+	min-height: 100%;
+	min-width: 100%;
 }
 
 /*NOTES:
 
-^ADD JS MODAL POP UP FOR PLACING ORDERS
 ^RESIZE HEADER WITH MEDIA QUERIES/ADD HAMBURGER MENU WITH BULMA
 ^ADD READ-ME
 ^ADJUST SIZE ON BACK TO TOP ARROW ON SMALLER SCREENS
+^STYLE LINKS!
+
+BULMA CHANGES-
+HAMBURGER MENU IN NAV ON SMALLER SCREENS
+HEADER
+FORM FOR ORDER
+POSSIBLY TABS
 */
