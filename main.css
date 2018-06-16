@@ -1,161 +1,30 @@
-
-/*body {
-	margin: 0;
-	font-size: 1rem;
+body {
+	background-color: #FFFFF4;
 }
-
-.wrap-body {
-	display: flex;
-	max-height: 100%;
-	flex-direction: column;
-}*/
-
-/*NAVIGATION TABS*/
-/*.tabs {
-	padding-top: 20px;
-}
-
-.content-banner{
-	padding-top: 25px;
-}
-
-.button-order {
-	display: flex;
-    position: fixed;
-    bottom: 30px;
-    left: 30px;
-	z-index: 1;
-    display: inline-block;
-}
-
-.wrap-content {
-	display: flex;
-	justify-content: center;
-	flex-direction: row;
-	padding-top: 25px;
-}
-
-.cookie-div {
-	flex-wrap: wrap;
-}
-
-#cookie-flavor {
-	margin-bottom: 25px;
-}
-
-.wrap-cookie-price {
-	margin-top: 25px;
-}
-
-.wrap-banner {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-h2 {
-	font-size: 40px;
-}
-
-.wrap-text {
-	display: flex;
-	text-align: center;
-	align-items: center;
-	height: auto;
-	width: 500px;
-	font-size: 25px;
-	margin: auto;
-	margin-top: 5%;
-}
-
-.wrap-img {
-	display: flex;
-	max-height: 350px;
-	max-width: 375px;
-	margin: auto;
-	margin-top: 5%;
-}
-
-img {
-	min-height: 100%;
-	min-width: 100%;
-}
-
-.wrap-cake-flavor, .wrap-cake-price,
-.wrap-cookie-flavor, .wrap-cookie-price,
-.wrap-pie-flavor, .wrap-pie-seasonal {
-	display: flex;
-	flex-direction: column;
-	margin: auto;
-	font-size: 28px;
-}
-
-#home, .content-banner {
-	background: #eadff2;
-}
-
-#cake {
-	background: #efe7f5;
-}
-
-#cookie {
-	background: #f4eff8;
-}
-
-#pie {
-	background: #f9f7fb;
-}
-
-footer {
-	text-align: center;
-	background: lightgrey;
-}
-
-.modal {
-	display: flex;
-	justify-content: center;
-	height: 100vh;
-	width: 100vw;
-	align-items: center;
-	display: flex;
-    position: fixed;
-    top: 0;
-	z-index: 1;
-	background-color: #b3a6ee;
-}
-
-form {
-	display: flex;
-	flex-direction: column;
-}*/
-
-/*input {
-	padding: 15px;
-	font-size: 16px;
-}*/
-
-/*.button-send-order {
-    position: relative;
-    top: 170px;
-    left: 50px;
-}*/
-
 
 /*NAVIGATION TABS*/
 .tabs {
 	padding-top: 20px;
 }
 
-/*HIDDEN CLASS FOR JS*/
-.hidden {
-	visibility: hidden;
-	height: 0;
+/*ABOUT DIV AND CONTENT*/
+.about-div {
+	margin: auto;
+}
+
+.about-div h3 {
+	text-align: center;
+}
+
+.text-about {
+	padding: 10px;
+    text-align: center;
 }
 
 .wrap-img {
 	display: flex;
-	max-height: 350px;
-	max-width: 375px;
+	max-height: 250px;
+	max-width: 275px;
 	margin: auto;
 	margin-top: 5%;
 }
@@ -165,16 +34,85 @@ img {
 	min-width: 100%;
 }
 
-/*NOTES:
+.hero {
+	background-color: #4D4D66;
+}
+/*COOKIE DIV AND CONTENT*/
+.cookie-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
-^RESIZE HEADER WITH MEDIA QUERIES/ADD HAMBURGER MENU WITH BULMA
-^ADD READ-ME
-^ADJUST SIZE ON BACK TO TOP ARROW ON SMALLER SCREENS
-^STYLE LINKS!
+.wrap-cookie-price {
+	margin-top: 50px;
+}
 
-BULMA CHANGES-
-HAMBURGER MENU IN NAV ON SMALLER SCREENS
-HEADER
-FORM FOR ORDER
-POSSIBLY TABS
-*/
+.holiday-cookies {
+	padding-top: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/*FOOTER*/
+.footer {
+	background: linear-gradient(to bottom, #8e9eab, #eef2f3);
+}
+
+/*MODAL AND ORDER FORM*/
+.modal {
+	display: flex;
+	justify-content: center;
+	min-height: 100vh;
+	width: 100vw;
+	align-items: center;
+	display: flex;
+    position: fixed;
+    top: 0;
+	z-index: 1;
+	background-color: rgba(0 ,0, 0, 0.8);
+
+}
+
+.open {
+	margin: 25px;
+}
+
+.column {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+td {
+	margin: 100px;
+}
+
+
+/*HERO*/
+.header-title {
+	color: white;
+}
+
+
+/*MEDIA QUERY*/
+@media screen and (max-width: 992px) {
+	.tabs a {
+		max-width: 75px;
+		font-size: .85rem;
+	}
+
+	.section {
+		text-align: center;
+	}
+}
+
+/*HIDDEN CLASS FOR JS*/
+.hidden {
+	visibility: hidden;
+	height: 0;
+	overflow: hidden;
+}
