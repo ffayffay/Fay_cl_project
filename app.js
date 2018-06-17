@@ -58,11 +58,4 @@ function handler(event) {
 
 tabs.addEventListener('click', handler);
 
-// GIVES ALL <SPAN> ELEMENTS FONT-WEIGHT: BOLD
-let spanEle = document.querySelectorAll('span');
-console.log(spanEle);
-
-for(let i = 0; i < spanEle.length; i++) {
-	spanEle[i].style.fontWeight = 'bold';	
-}
 

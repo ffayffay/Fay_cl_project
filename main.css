@@ -1,5 +1,10 @@
 body {
 	background-color: #FFFFF4;
+	font-family: 'Raleway', sans-serif;
+}
+
+span {
+	font-weight: bold;
 }
 
 /*NAVIGATION TABS*/
@@ -95,6 +100,16 @@ td {
 /*HERO*/
 .header-title {
 	color: white;
+	font-family: 'Arima Madurai', cursive;
+	font-weight: normal;
+}
+
+/*HEADER FONTS*/
+h3,
+h4,
+h5{
+	font-family: 'Arima Madurai', cursive;
+	font-weight: normal;
 }
 
 

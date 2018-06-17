@@ -2,6 +2,8 @@
 <html>
 <head>
 	<title>Fay</title>
+	<link href="https://fonts.googleapis.com/css?family=Arima+Madurai|Raleway" rel="stylesheet">
+
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +17,7 @@
 	<section class="hero">	
 	  <div class="hero-body">
 	    <div class="container">
-	      <h1 class="title header-title">
+	      <h1 class="title is-2 header-title">
 	        Fay's Cakes and What-not
 	      </h1>
 	    </div>
@@ -73,63 +75,22 @@
 			<div class="column">
 					<h3 class="title is-3">Cake Flavors</h3>
 
-					<ul class="is-size-5">
-						<li>Vanilla</li>
-						<li>Chocolate</li>
-						<li>Yellow Cake with Ganache Buttercream</li>
-						<li>Mocha</li>
-						<li>Lemon-Blueberry</li>
-						<li>Strawberry Jam</li>
-					</ul>
+					<ul class="cake-flavors-list is-size-5"></ul>
 				</div>
 
 				<div class="column">
 					<h3 class="title is-3">Sizes</h3>
 
-					<table class="table">
-						<!-- ROUND CAKES START -->
+					<table>
 						<tr>
-							<th>Size:</th>
-							<th>Serving:</th>
-							<th>Price:</th>
+								<th>Size:</th>
+								<th>Serving:</th>
+								<th>Price:</th>
 						</tr>
-						<tr>
-							<td>2-Layer 8" Round</td>
-							<td>Serves- 10-12</td>
-							<td>Starts at <span>$25.00</span></td>
-						</tr>
-						<tr>
-							<td>2-Layer 10" Round</td>
-							<td>Serves- 20-22</td>
-							<td>Starts at <span>$35.00</span></td>
-						</tr>
-						<!-- ROUND CAKES END -->
 
-						<!-- SHEET CAKES START -->
-						<tr>
-							<td>Quarter Sheet</td>
-							<td>Serves- 12-15</td>
-							<td>Starts at <span>$25.00</span></td>
-						</tr>
-						<tr>
-							<td>Half Sheet</td>
-							<td>Serves- 30-35</td>
-							<td>Starts at <span>$40.00</span></td>
-						</tr>
-						<tr>
-							<td>Full Sheet</td>
-							<td>Serves- 60-65</td>
-							<td>Starts at <span>$80.00</span></td>
-						</tr>
-						<!-- SHEET CAKES END -->
-
-						<!-- CUPCAKES START -->
-						<tr>
-							<td>Cupcakes One Dozen</td>
-							<td></td>
-							<td>Starts at <span>$15.00</span></td>
-						</tr>
-						<!-- CUPCAKES END -->
+						<tbody class="table">
+							
+						</tbody>
 					</table>
 				</div>
 	</div>
@@ -140,14 +101,7 @@
 		<div class="">
 					<h3 class="title is-3" id="cookie-flavor">Cookie Flavors</h3>
 
-					<ul class="is-size-5">
-						<li>Chocolate Chip</li>
-						<li>Classic Sugar with a hint of Lemon</li>
-						<li>Peanut Butter</li>
-						<li>Triple Chocolate Mocha</li>
-						<li>Shortbread with Raspberry Jam</li>
-						<li>Oatmeal Cherry Walnut</li>
-					</ul>
+					<ul class="cookie-flavors-list is-size-5"></ul>
 				</div>
 
 				<div class="holiday-cookies">
@@ -171,17 +125,7 @@
 		<div class="column is-half">
 					<h3 class="title is-3">Pie Flavors</h3>
 
-					<ul class="is-size-5">
-						<li>Apple <span>$15.00</span></li>
-						<li>Lemon Meringue <span>$15.00</span></li>
-						<li>Chocolate Cream <span>$15.00</span></li>
-						<li>Strawberry <span>$15.00</span></li>
-						<li>Rasberry <span>$15.00</span></li>
-						<li>Blueberry <span>$15.00</span></li>
-						<li>Mixed Berry <span>$17.00</span></li>
-						<li>Cherry <span>$18.00</span></li>
-						<li>Pecan with or without Chocolate Chips <span>$20.00</span></li>
-					</ul>
+					<ul class="pie-flavors-list is-size-5"></ul>
 				</div>
 
 				<div class="column is-half">
@@ -189,12 +133,12 @@
 
 					<ul class="is-size-5">
 						<h5 class="title is-5">Available June-August</h5>
-						<li>Key Lime <span>$15.00</span></li>
-						<li>Strawberry Rhubarb <span>$15.00</span></li>
-						<li>Peach <span>$17.00</span></li><br>
+						<li>Key Lime- <span>$15.00</span></li>
+						<li>Strawberry Rhubarb- <span>$15.00</span></li>
+						<li>Peach- <span>$17.00</span></li><br>
 						<h5 class="title is-5">Available Late September-December</h5>
-						<li>Pumpkin <span>$15.00</span></li>
-						<li>Sweet Potatoe with Cinnamon Strussel <span>$15.00</span></li>
+						<li>Pumpkin- <span>$15.00</span></li>
+						<li>Sweet Potatoe with Cinnamon Strussel- <span>$15.00</span></li>
 					</ul>
 				</div>
 	</div>
@@ -235,5 +179,8 @@
 	</div>
 	<!-- ORDER FORM END -->
 <script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="cake-tab.js"></script>
+<script type="text/javascript" src="cookie-tab.js"></script>
+<script type="text/javascript" src="pie-tab.js"></script>
 </body>
 </html>
