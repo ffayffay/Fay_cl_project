@@ -7,6 +7,10 @@ span {
 	font-weight: bold;
 }
 
+.open {
+	box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+}
+
 /*NAVIGATION TABS*/
 .tabs {
 	padding-top: 20px;
@@ -42,6 +46,11 @@ img {
 .hero {
 	background-color: #4D4D66;
 }
+
+a {
+	color: #353547;
+}
+
 /*COOKIE DIV AND CONTENT*/
 .cookie-div{
     display: flex;
@@ -61,9 +70,17 @@ img {
 	align-items: center;
 }
 
+/*FORM*/
+input,
+textarea {
+	padding: 25px;
+	margin: 2.5px;
+}
+
 /*FOOTER*/
 .footer {
-	background: linear-gradient(to bottom, #8e9eab, #eef2f3);
+	background: linear-gradient(to bottom, #7e7e83, #e2e2e2);
+
 }
 
 /*MODAL AND ORDER FORM*/
@@ -83,6 +100,10 @@ img {
 
 .open {
 	margin: 25px;
+}
+
+.close {
+	margin-top: 50px;
 }
 
 .column {
@@ -130,4 +151,9 @@ h5{
 	visibility: hidden;
 	height: 0;
 	overflow: hidden;
+}
+
+.tabs.is-boxed li.is-active a {
+	color: #6E6E92;
+	font-weight: bold;
 }

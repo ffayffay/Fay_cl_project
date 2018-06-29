@@ -1,10 +1,13 @@
 let cakeFlavors = ['Vanilla', 'Chocolate', 'Yellow Cake with Ganache Buttercream', 'Mocha', 'Lemon-Blueberry', 'Strawberry Jam'];
 let cakeFlavorsList = document.querySelector('.cake-flavors-list');
 
+//LOOPING THROUGH THE cakeFlavors ARRAY 
+//USING insertAdjacentHTML TO DYMAICALLY INSERT THE CURRENT CAKE FLAVOR IN THE ARRAY INTO THE .cake-flavors-list <UL>
 for(let i = 0; i < cakeFlavors.length; i ++){
 	cakeFlavorsList.insertAdjacentHTML("beforeend", createCakeFlavorsHtml(cakeFlavors[i]));
 }
 
+//
 function createCakeFlavorsHtml (cakeFlavors){
 	let template = `<li>${cakeFlavors}</li>`
 	return template
@@ -43,7 +46,7 @@ let cakeTableInfo = [
 }
 ];
 
-let table = document.querySelector('.table');
+let table = document.querySelector('.cake-table');
 
 for(let i = 0; i < cakeTableInfo.length; i ++) {
 	table.insertAdjacentHTML("beforeend", createTableHtml(cakeTableInfo[i]));

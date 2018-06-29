@@ -3,10 +3,12 @@ let modal = document.querySelector('.modal');
 let openBtn = document.querySelector('.open');
 let closeBtn = document.querySelector('.close');
 
+// ADDS AN EVENT LISTENER TO THE OPEN BUTTON THAT REMOVES THE HIDDEN CLASS FROM THE MODAL ELEMENT WHEN CLICKED
 openBtn.addEventListener('click', function() {
   modal.classList.remove('hidden')
 });
 
+//ADDS AN EVENT LISTENER TO THE CLOSE BUTTON THAT ADDS THE HIDDEN CLASS TO THE MODAL ELEMENT WHEN CLICKED
 closeBtn.addEventListener('click', function() {
   modal.classList.add('hidden')
 });
@@ -19,7 +21,7 @@ let tab = document.querySelectorAll('.tab');
 
 
 function handler(event) {
-	// log event for testing and exploring
+	// LOGGING THE EVENT FOR TESTING
 	console.log(event)
 
 	for(var i = 0; i < tab.length; i++) {
