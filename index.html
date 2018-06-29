@@ -4,6 +4,7 @@
 	<title>Fay</title>
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
@@ -153,22 +154,26 @@
 	<!-- BACK TO TOP BUTTON END -->
 
 	<!-- ORDER BUTTON START -->
-	<button class="button-order" id="button-order">Place Order</button>
+	<button class="button-order open" id="button-order">Place Order</button>
 	<!-- ORDR BUTTON END -->
 
 	<!-- ORDER FORM START -->
-	<div class="wrap-order-form modal">
+	<div class="wrap-order-form modal hidden">
 		<form class="form-order">
-			Name:<br><input type="text" name="name"><br>
-			Telephone Number:<br><input type="text" name="telephoneNumber"><br>
-			Email:<br><input type="text" name="email"><br>
-			Order Pickup Date:<br><input type="text" name="orderDate"><br>
-			<textarea name="orderDescription">Order Description:</textarea>
+			<div class="field">
+				<input class="input is-large" type="text" placeholder="Name"><br>
+				<input class="input is-large" type="text" placeholder="Telephone Number"><br>
+				<input class="input is-large" type="text" placeholder="Email Address"><br>
+				<input class="input is-large" type="text" placeholder="Order Pick Up Date"><br>
+				<textarea class="textarea" placeholder="Description of Order"></textarea>
+			</div>
 		</form>
 
-		<button class="button-send-order">Place Order</button>
+		<button class="button-send-order close">Send Order</button>
 	</div>
 	<!-- ORDER FORM END -->
+
+	
 	<script type="text/javascript" src="app.js"></script>
 </body>
 </html>
