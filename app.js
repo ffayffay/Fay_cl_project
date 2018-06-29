@@ -17,7 +17,7 @@ let cakeDiv = document.querySelector('.cake-div');
 let pieDiv = document.querySelector('.pie-div');
 let aboutDiv = document.querySelector('.about-div');
 let cookieDiv = document.querySelector('.cookie-div');
-let tab = document.querySelectorAll('.tab');
+let tabs = document.querySelectorAll('.tab');
 
 
 function handler(event) {
