@@ -7,7 +7,7 @@ for(let i = 0; i < cakeFlavors.length; i ++){
 	cakeFlavorsList.insertAdjacentHTML("beforeend", createCakeFlavorsHtml(cakeFlavors[i]));
 }
 
-//
+//CREATES AN <LI> ELEMENT TO DISPLAY THE CAKE FLAVORS
 function createCakeFlavorsHtml (cakeFlavors){
 	let template = `<li>${cakeFlavors}</li>`
 	return template
@@ -52,6 +52,7 @@ for(let i = 0; i < cakeTableInfo.length; i ++) {
 	table.insertAdjacentHTML("beforeend", createTableHtml(cakeTableInfo[i]));
 }
 
+//CREATES A TABLE ROW ELEMENT TO DISPLAY THE CAKE TABLE INFO
 function createTableHtml (cakeTableInfo){
 	let template = `
 <tr>

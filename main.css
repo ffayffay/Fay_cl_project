@@ -32,7 +32,7 @@ span {
 
 .wrap-img {
 	display: flex;
-	max-height: 250px;
+	max-height: 350px;
 	max-width: 275px;
 	margin: auto;
 	margin-top: 5%;
@@ -147,8 +147,16 @@ h5{
 }
 
 /*HIDDEN CLASS FOR JS*/
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.75s linear;
+}
+
 .hidden {
 	visibility: hidden;
+	opacity: 0;
+  	transition: visibility 0s 0.75s, opacity 0.75s linear;
 	height: 0;
 	overflow: hidden;
 }
