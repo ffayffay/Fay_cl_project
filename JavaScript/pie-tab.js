@@ -23,7 +23,7 @@ let pieFlavors = [
 	{name: 'Cherry- ',
 	price: ' $18.00'},
 
-	{name: 'Pecan with or without Chocolate Chips- ',
+	{name: 'Pecan- ',
 	price: ' $20.00'}];
 
 let pieFlavorsList = document.querySelector('.pie-flavors-list');
@@ -35,7 +35,7 @@ function renderHtml(flavors) {
 }
 
 function createPieFlavorsHtml (pieFlavor){
-	var template = `<li>${pieFlavor.name}<span>${pieFlavor.price}</span></li>`
+	var template = `<li class="pie-li"><span class="pie-flavor">${pieFlavor.name}</span><span class="price">${pieFlavor.price}</span></li>`
 	return template
 }
 

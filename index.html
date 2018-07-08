@@ -12,7 +12,6 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-
 <!-- HERO -->
 	<section class="hero">	
 	  <div class="hero-body">
@@ -35,36 +34,21 @@
 
 <section class="section">
 	<!-- ABOUT -->
-	<div class="about-div container level columns wrap-content tab">
+	<div class="about-div container level wrap-content tab">
 		
-		<div class="wrap-text column is-7">
+		<div class="wrap-text">
 			<h3 class="title is-3">Welcome and blah..</h3>
-					<p class="text-about is-size-5"> Chew on cable why must they do that, and find empty spot in cupboard and sleep all day.
-		 Purr while eating. Climb leg lick butt and make a weird face.
-
-		 Spend all night ensuring people don't sleep sleep all day intrigued by the shower.
-
-		 Run in circles. Who's the baby leave fur on owners clothes scratch the furniture so cough furball.
-
-		 Ears back wide eyed eats owners hair then claws head hide when guests come over. Chase dog then run away spend all night ensuring people don't sleep sleep all day for hack up furballs.
-
-		 Get video posted to internet for chasing red dot. Under the bed kitty power!<br>
-		 Chew on cable why must they do that, and find empty spot in cupboard and sleep all day.
-
-		 Purr while eating. Climb leg lick butt and make a weird face.
-
-		 Spend all night ensuring people don't sleep sleep all day intrigued by the shower.
-
-		 Run in circles. Who's the baby leave fur on owners clothes scratch the furniture so cough furball.
-					</p>
+					<p class="text-about is-size-5"> Sugar plum pastry caramels powder gummies cupcake. Jelly-o marshmallow marshmallow sesame snaps macaroon gingerbread gummi bears. Dessert donut oat cake muffin. Sesame snaps toffee candy tiramisu liquorice jelly-o marzipan jujubes sesame snaps. Chocolate powder cake. Chocolate sesame snaps toffee brownie chocolate cake icing lollipop jelly beans ice cream. Liquorice jelly beans lemon drops cotton candy lollipop toffee. Candy carrot cake apple pie marshmallow tootsie roll pie chocolate cake danish. Bear claw cake chocolate topping. Sweet topping tart dessert chupa chups brownie wafer marshmallow.<br>
+Pastry sesame snaps apple pie bonbon cake jelly bonbon. Gingerbread jelly beans jujubes. Oat cake tart caramels lemon drops ice cream macaroon. Candy canes chocolate bar chupa chups gummies lollipop tart. Danish brownie sugar plum cake cookie gingerbread bear claw powder. Chupa chups cheesecake halvah fruitcake pie gummies icing chocolate cake cookie.<br>
+Jelly-o liquorice danish chupa chups pudding. Gummi bears muffin oat cake tart candy danish powder lemon drops brownie. Gingerbread pie candy icing. Topping wafer tart icing tart carrot cake gingerbread caramels gummies. Sugar plum sugar plum lollipop cotton candy chocolate bar donut ice cream lemon drops. Danish jelly-o pastry apple pie jujubes powder pastry. Marzipan cake jelly icing icing tootsie roll cookie. Cake pudding croissant wafer sugar plum. Marzipan halvah candy carrot cake chocolate bar tiramisu dessert.
 				</div>
 
-				<div class="column is-2"></div>
+				<!-- <div class="column is-2"></div>
 
 				<div class="wrap-img column is-3">
 					<img src="./cake.png">
 				</div>
-
+ -->
 	</div>
 
 	<!-- CAKE -->
@@ -120,23 +104,38 @@
 	<!-- PIE -->
 	<div class="pie-div columns hidden visible tab">
 
-		<div class="column is-half">
+		<div class="column">
 					<h3 class="title is-3">Pie Flavors</h3>
 
 					<ul class="pie-flavors-list is-size-5"></ul>
 				</div>
 
-				<div class="column is-half">
+				<div class="column">
 					<h3 class="title is-3">Seasonal Flavors</h3>
 
 					<ul class="is-size-5">
 						<h5 class="title is-5">Available June-August</h5>
-						<li>Key Lime- <span>$15.00</span></li>
-						<li>Strawberry Rhubarb- <span>$15.00</span></li>
-						<li>Peach- <span>$17.00</span></li><br>
+						<li class="pie-li">
+							<span class="pie-flavor">Key Lime-</span>
+							<span class="price">$15.00</span>
+						</li>
+						<li class="pie-li">
+							<span class="pie-flavor">Strawberry Rhubarb-</span>
+							<span class="price">$15.00</span>
+						</li>
+						<li class="pie-li">
+							<span class="pie-flavor">Peach-</span>
+							<span class="price">$17.00</span>
+						</li><br>
 						<h5 class="title is-5">Available Late September-December</h5>
-						<li>Pumpkin- <span>$15.00</span></li>
-						<li>Sweet Potatoe with Cinnamon Strussel- <span>$15.00</span></li>
+						<li class="pie-li">
+							<span class="pie-flavor">Pumpkin-</span>
+							<span class="price">$15.00</span>
+						</li>
+						<li class="pie-li">
+							<span class="pie-flavor">Sweet Potatoe with Cinnamon Strussel-</span>
+							<span class="price">$15.00</span>
+						</li>
 					</ul>
 				</div>
 	</div>
@@ -164,11 +163,17 @@
 <!-- ORDER FORM START -->
 	<div class="wrap-order-modal modal hidden visible">
 		<div class="wrap-form">
+			<form>
 				<div>
+					<label>Name:</label>
 					<input class="input is-large" type="text" placeholder="Name"><br>
+					<label>Telephone Number:</label>
 					<input class="input is-large" type="text" placeholder="Telephone Number"><br>
+					<label>Email Address:</label>
 					<input class="input is-large" type="text" placeholder="Email Address"><br>
+					<label>Order Pick Up Date:</label>
 					<input class="input is-large" type="text" placeholder="Order Pick Up Date"><br>
+					<label>Description of Order</label>
 					<textarea class="textarea is-large" placeholder="Description of Order"></textarea>
 				</div>
 			</form>
@@ -176,9 +181,9 @@
 		<button class="button close">Send Order</button>
 	</div>
 	<!-- ORDER FORM END -->
-<script type="text/javascript" src="app.js"></script>
-<script type="text/javascript" src="cake-tab.js"></script>
-<script type="text/javascript" src="cookie-tab.js"></script>
-<script type="text/javascript" src="pie-tab.js"></script>
+<script type="text/javascript" src="./JavaScript/app.js"></script>
+<script type="text/javascript" src="./JavaScript/cake-tab.js"></script>
+<script type="text/javascript" src="./JavaScript/cookie-tab.js"></script>
+<script type="text/javascript" src="./JavaScript/pie-tab.js"></script>
 </body>
 </html>

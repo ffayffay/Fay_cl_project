@@ -10,7 +10,7 @@ openBtn.addEventListener('click', function() {
 
 //ADDS AN EVENT LISTENER TO THE CLOSE BUTTON THAT ADDS THE HIDDEN CLASS TO THE MODAL ELEMENT WHEN CLICKED
 closeBtn.addEventListener('click', function() {
-  modal.classList.add('hidden').remove('visible')
+  modal.classList.add('hidden')
 });
 
 let cakeDiv = document.querySelector('.cake-div');

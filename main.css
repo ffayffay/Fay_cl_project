@@ -1,9 +1,25 @@
 body {
-	background-color: #FFFFF4;
 	font-family: 'Raleway', sans-serif;
+	background-color: #FFFFF4;
+	background-image: url("https://images5.alphacoders.com/427/thumb-1920-427149.jpg");
+	background-repeat: no-repeat;
 }
 
-span {
+.about-div, .cake-div, .cookie-div, .pie-div {
+	background-color: white;
+	opacity: 0.78;
+	border: 1px solid gray;
+}
+
+h3 {
+	margin-top: 25px;
+}
+
+h4 {
+	margin-bottom: 25px; 
+}
+
+.price {
 	font-weight: bold;
 }
 
@@ -14,6 +30,7 @@ span {
 /*NAVIGATION TABS*/
 .tabs {
 	padding-top: 20px;
+	background-color: #FFFFF4;
 }
 
 /*ABOUT DIV AND CONTENT*/
@@ -26,11 +43,11 @@ span {
 }
 
 .text-about {
-	padding: 10px;
+	margin: 30px;
     text-align: center;
 }
 
-.wrap-img {
+/*.wrap-img {
 	display: flex;
 	max-height: 350px;
 	max-width: 275px;
@@ -41,10 +58,10 @@ span {
 img {
 	min-height: 100%;
 	min-width: 100%;
-}
+}*/
 
 .hero {
-	background-color: #4D4D66;
+	background-color: #2F2F2F;
 }
 
 a {
@@ -70,17 +87,38 @@ a {
 	align-items: center;
 }
 
+/*PIE SECTION*/
+.pie-li {
+	display: flex;
+	justify-content: space-between;
+	margin: 10px;
+}
+
+.pie-flavor {
+	display: flex;
+}
+
+.price {
+	display: flex;
+	margin-left: 30px;
+}
+
 /*FORM*/
 input,
 textarea {
 	padding: 25px;
-	margin: 2.5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+label {
+	color: #ffdfe5;
+	font-size: large;
 }
 
 /*FOOTER*/
 .footer {
-	background: linear-gradient(to bottom, #7e7e83, #e2e2e2);
-
+	background: linear-gradient(to bottom, #2F2F2F, #434343);
 }
 
 /*MODAL AND ORDER FORM*/
@@ -104,6 +142,8 @@ textarea {
 
 .close {
 	margin-top: 50px;
+	background-color: #ffd9df;
+	border: 3px solid #ffc0cb;
 }
 
 .column {
@@ -111,6 +151,7 @@ textarea {
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
+	margin: 20px;
 }
 
 td {
@@ -131,14 +172,15 @@ h4,
 h5{
 	font-family: 'Arima Madurai', cursive;
 	font-weight: normal;
+	border-bottom: 1px solid #e5acb6;
 }
 
 
 /*MEDIA QUERY*/
 @media screen and (max-width: 992px) {
 	.tabs a {
-		max-width: 75px;
-		font-size: .85rem;
+		max-width: 85px;
+		font-size: 1.25rem;
 	}
 
 	.section {
@@ -146,11 +188,16 @@ h5{
 	}
 }
 
-/*HIDDEN CLASS FOR JS*/
-.visible {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 0.75s linear;
+@media screen and (max-width: 600px) {
+	body {
+		background-color: #ffccd5;
+		background-image: none;
+	}
+
+	.wrap-form {
+		margin-left: 30px;
+		margin-right: 30px;
+	}
 }
 
 .hidden {
@@ -162,6 +209,7 @@ h5{
 }
 
 .tabs.is-boxed li.is-active a {
-	color: #6E6E92;
+	color: #e5acb6;
 	font-weight: bold;
 }
+
