@@ -4,14 +4,14 @@ let openBtn = document.querySelector('.open');
 let closeBtn = document.querySelector('.close');
 
 // ADDS AN EVENT LISTENER TO THE OPEN BUTTON THAT REMOVES THE HIDDEN CLASS FROM THE MODAL ELEMENT WHEN CLICKED
-openBtn.addEventListener('click', function() {
-  modal.classList.remove('hidden')
-});
+// openBtn.addEventListener('click', function() {
+//   modal.classList.remove('hidden')
+// });
 
 //ADDS AN EVENT LISTENER TO THE CLOSE BUTTON THAT ADDS THE HIDDEN CLASS TO THE MODAL ELEMENT WHEN CLICKED
-closeBtn.addEventListener('click', function() {
-  modal.classList.add('hidden')
-});
+// closeBtn.addEventListener('click', function() {
+//   modal.classList.add('hidden')
+// });
 
 let cakeDiv = document.querySelector('.cake-div');
 let pieDiv = document.querySelector('.pie-div');
@@ -36,6 +36,7 @@ function handler(event) {
 	switch(textOfClickedTarget) {
 		case 'about':
 			aboutDiv.classList.remove('hidden');
+			aboutDiv.classList.add('visible');
 			break;
 
 		case 'cakes':
